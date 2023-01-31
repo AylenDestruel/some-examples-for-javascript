@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA CALCULO IMC</h1>
+
+<script>
+
+function saltarLinea() {
+
+	document.write("<br>");
+	document.write("<br>");
+
+}
+
+function imprimir(frase) {
+
+	document.write(frase)
+	saltarLinea();
+}
+
+function calcularImc(peso,altura,nombre) {
+	
+	imc = peso / (altura * altura)
+	imprimir("El imc calculado de " + nombre + " es " + imc);
+	
+}
+
+//imcPepito = pesoPepito / (alturaPepito * alturaPepito)
+
+
+calcularImc(71,1.72,"pepito");
+calcularImc(80,1.78,"catalina");
+
+pesoFelipe = 75
+alturaFelipe = 1.73
+imcFelipe = pesoFelipe / (alturaFelipe * alturaFelipe)
+
+imprimir("EL imc de pepito es: " + imcFelipe)
+
+imprimir("El promedio del imc calculado de pepito y catalina es: " + (calcularImc(71,1.72)+calcularImc(71,1.72))/2);
+
+  imprimir("El promedio del imc calculado de pele y messi es: " + (calcularImc(85,1.90)+calcularImc(75,1.73))/2);
+
+ //calcularImc(71,1.72,"pepito",80,1.78,"catalina");
+	
+</script>
